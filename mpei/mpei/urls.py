@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from ..schedule.views import Schedule
+from schedule.views import ScheduleViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r"schedule", Schedule)
+router.register(r"schedule", ScheduleViewSet)
 
 
 urlpatterns = [
